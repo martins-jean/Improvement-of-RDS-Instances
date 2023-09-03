@@ -17,6 +17,12 @@ Improved the operational efficiency, availability and performance of relational 
 ## Reproducibility Guidelines
 
 <details>
+  <summary>Required setup</summary>
+  1. Create a VPC with DNS resolution and hostnames enabled. <br>
+  2. Create a security group that allows all traffic, all protocols and all port ranges for both inbound and outbound rules and name it default. <br>
+</details>
+
+<details>
   <summary>Launch and Amazon RDS instance</summary>
   1. Navigate to the RDS console. <br>
   2. Select Databases and click create database. <br>
@@ -26,15 +32,42 @@ Improved the operational efficiency, availability and performance of relational 
   - Instance identifier: my-database. <br>
   - Master username: admin. <br>
   - Master password: TheRQDword777! <br>
-  - 
+  - DB instance class: Burstable classes. <br>
+  - Type: db.t3.xlarge <br>
+  - Storage type: General purpose SSD (gp2). <br>
+  - Allocated storage: 20. <br>
+  - Enable storage autoscaling: checked. <br>
+  - Maximum storage threshold: 1000. <br>
 </details>
 
 <details>
   <summary>Configure a Multi-AZ deployment</summary>
+  1. Under Availability and Durability, Multi-AZ deployment: Create a standby instance. <br>
+  2. Continue the creation with the following configurations:
+  - VPC: keep the default VPC. <br>
+  - Subnet: default. <br>
+  - Public access: no. <br>
+  - VPC security group: choose existing, then default. <br>
+  - Database authentication options: password authentication. <br>
+  - Under monitoring, turn on performance insights. <br>
+  - Expand additional configuration if needed and clear the enhanced monitoring checkbox. <br>
 </details>
 
 <details>
   <summary>Configure Amazon RDS backups</summary>
+  1. Under database options, use the following configurations: <br>
+  - Initial database name: my_database. <br>
+  - DB parameter group: default.mariadb10.6 <br>
+  - Option group: default:mariadb-10-6 <br>
+  2. Under backup, choose the following: <br>
+  - Automated backups: enabled. <br>
+  - Backup retention period: 7 days. <br>
+  - Backup window: no preference. <br>
+  3. Under encryption choose the following:
+  - Enable encryption: checked. <br>
+  - Enable auto minor version upgrade: cleared. <br>
+  - Maintenance window: no preference. <br>
+  4. Click on create database. <br>
 </details>
 
 <details>
