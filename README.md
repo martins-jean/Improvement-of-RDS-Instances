@@ -14,3 +14,20 @@ Improved the operational efficiency, availability and performance of relational 
 5. As the name record for your DB instance remains the same, your application can resume database operations without the need for further intervention by the user. <br>
 6. For read-heavy database workloads, you can create one or more read replicas of a DB instance. This way, you can serve high-volume application read traffic from multiple copies of your data, thereby increasing its aggregate read throughput. <br>
 
+## Reproducibility Guidelines
+
+<details>
+  <summary>Launch and Amazon RDS instance</summary>
+</details>
+
+<details>
+  <summary>Configure a Multi-AZ deployment</summary>
+</details>
+
+<details>
+  <summary>Configure Amazon RDS backups</summary>
+</details>
+
+<details>
+  <summary>Create a read replica of the primary database using a db.t3.xlarge instance</summary>
+</details>
