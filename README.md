@@ -72,4 +72,6 @@ Improved the operational efficiency, availability and performance of relational 
 
 <details>
   <summary>Create a read replica of the primary database using a db.t3.xlarge instance</summary>
+  1. After the creation of the database is finished which should take between 15 and 20 minutes, refresh until the status is listed as available. <br>
+  2. Click on Actions and then Create read replica. <br>
 </details>
