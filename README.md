@@ -26,7 +26,7 @@ Improved the operational efficiency, availability and performance of relational 
   - Instance identifier: my-database. <br>
   - Master username: admin. <br>
   - Master password: TheRQDword777! <br>
-  - fr
+  - frr
 </details>
 
 <details>
