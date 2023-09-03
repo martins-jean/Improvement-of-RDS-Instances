@@ -22,7 +22,11 @@ Improved the operational efficiency, availability and performance of relational 
   2. Select Databases and click create database. <br>
   3. Choose "Standard create" and the MariaDB engine type. <br>
   4. Keep the version provided by default and choose the Dev/Test template. <br>
-  5. 
+  5. Use the following configurations: <br>
+  - Instance identifier: my-database. <br>
+  - Master username: admin. <br>
+  - Master password: TheRQDword777! <br>
+  - 
 </details>
 
 <details>
