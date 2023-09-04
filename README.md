@@ -1,8 +1,6 @@
 # Improvement of RDS Instances in AWS
 Improved the operational efficiency, availability and performance of relational databases by using multiple AZs and a read replica.
 
-fffff
-
 ## Architecture Diagram
 
 ![Screenshot 2023-09-03 at 10 30 28](https://github.com/martins-jean/Improvement-of-RDS-Instances-in-AWS/assets/118685801/beee3609-0866-4f41-aa43-5e8164efbdc5)
