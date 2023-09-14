@@ -11,7 +11,7 @@ An insurance company needs to improve the operational efficiency, availability a
 ## Project objectives
 
 <p align="justify">
-1. To remove the need for manual database infrastructure provisioning and maintenance, we will use RDS instances. <br>
+1. To remove the need for manual database infrastructure provisioning and maintenance, we will use RDS. <br>
 2. To achieve high availability, we will deploy the database across multiple availability zones. <br>
 3. To serve high-volume application read traffic and increase read throughput, we will use create read replicas.
 </p>
